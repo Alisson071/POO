@@ -22,11 +22,10 @@ public class FuncionarioHora extends FuncionarioAssalariado{
     }
     @Override
     public double ganhos() {
-        return super.ganhos();
+        return super.ganhos() + horas*valorDaHora;
     }
-    @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + String.format(" - Horas: %d - Valor: %.2f - Salario: %.3f", this.horas, this.valorDaHora, ganhos());
     }
     
 }

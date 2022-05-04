@@ -10,6 +10,9 @@ public class Funcionario{
         this.segundo_nome = segundo_nome;
         this.salario = salario;
     }
+    public String toString() {
+        return String.format("Nome: %s - Sobrenome: %s - salario: %.3f", this.primeiro_nome, this.segundo_nome, this.salario);
+    }
 
     public String getPrimeiroNome(){
         return primeiro_nome;

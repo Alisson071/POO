@@ -1,8 +1,11 @@
 package Herança;
 
 public class AppPagamentos {
-    String nome, sobrenome;
-    double salario;
-    int comissão;
-    Funcionario f = new Funcionario(nome, sobrenome, salario);
+    public static void main(String args[]){
+    Funcionario f = new Funcionario("Francisco", "Sales", 2.300);
+    FuncionarioComissionado c = new FuncionarioComissionado("Fernando", "Souza", 3.200, 30, 0.25);
+
+    System.out.println(f.toString());
+    System.out.println(c.toString());
+    }
 }

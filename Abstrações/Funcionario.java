@@ -8,7 +8,7 @@ abstract class Funcionario {
         this.matricula = matricula;
     }
     public String toString(){
-        return ("Nome: " + this.nome + ", Matricula: " + this.matricula);
+        return String.format("Nome: %s - Matricula: %s", this.nome, this.matricula);
     }
     public String getNome(){
         return this.nome;

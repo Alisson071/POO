@@ -10,7 +10,7 @@ public class FuncionarioComissionado extends Funcionario{
     }
     @Override
     public double ganhos() {
-        return 0;
+        return quantidadeVendas*valorPorVenda;
     }
     public int getQuantidadeVendas() {
         return quantidadeVendas;
@@ -24,8 +24,7 @@ public class FuncionarioComissionado extends Funcionario{
     public void setValorPorVenda(double valorPorVenda) {
         this.valorPorVenda = valorPorVenda;
     }
-    @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + String.format(" - Vendas: %d - Valor: %.2f - Salario: %.3f", this.quantidadeVendas, this.valorPorVenda, ganhos());
     }
 }
